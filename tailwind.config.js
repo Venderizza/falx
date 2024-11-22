@@ -2,16 +2,22 @@
 module.exports = {
   content: ['pages/*.html'],
   theme: {
-    screens: {},
+    screens: {
+      'sm': '576px',
+
+      'md': '960px',
+
+      'lg': '1500px',
+    },
 
     fontFamily: {
-      'sans': ['Gilroy-ExtraBold'],
+      'sans': ['Gilroy-SemiBold', 'Gilroy-Light'],
     },
     
     extend: {
 
       backgroundImage: {
-        'main': "url('src/images/main.jfif')"
+        main: "url('/src/images/test.jpg')"
       },
       colors: {
         blurButton: '#1C1C1C8F',

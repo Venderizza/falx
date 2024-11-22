@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 </head>
 <body class="ml-16 mr-16">
 
   <header>
-    <div class="text-lg flex justify-between items-center  mt-10 bg-slate-400s font-sans text-darkText">
+    <div class="text-sm flex justify-between items-center font-semibold mt-10 bg-slate-400s text-darkText font-glr">
       <div class="flex justify-between items-center space-x-9">
         <img src="../src/icons/logo.svg" alt="" width="69" height="66">
         <a href="">Наши сервисы</a>
@@ -17,21 +18,46 @@
         <a href="">Статистика</a>
         <a href="">Узнать больше</a>
       </div>
-      <div>+7 (000) 000-00-00</div>
+      <div class="text-base">+7 (000) 000-00-00</div>
     </div>
 
-    <div class="bg-main mt-12 h-[68vh] bg-caseBlue rounded-[78px] pt-[10%]">
+    <div class="bg-[url('images/main.jfif')] bg-center bg-cover mt-12 h-[75vh] w-full rounded-[78px] pt-[7%]">
+    
+      <div class="relative">
 
-      <div class="grid grid-cols-5 gap-4 rounded-xl w-[80%] bg-slate-500">
-        <div class="col-start-1 col-span-2 bg-white w-full h-[70px] rounded-[37px]"></div>
-        <div class="col-start-3 col-span-2 bg-white w-full rounded-[37px]"></div>
-        <div class="bg-white w-full rounded-[37px]">*</div>
-        <div class="bg-white w-full rounded-[37px]">*</div>
-        <div class="bg-white w-full rounded-[37px]">*</div>
+        <div class="absolute backdrop-blur-[7px] bg-blurButton w-[31%] h-[6em] lg:h-[7.5em] rounded-[37px] flex justify-between pl-8 items-center ml-[37%]">
+          <div class="">
+            <div class="font-glr text-[24px] lg:text-[30px] text-white">Кейсы</div>
+            <div class="font-glr text-[14px] lg:text-[18px] text-white font-light">Какими проектами занимается компания</div>
+          </div>
+          <img src="../src/icons/arrow.svg" class="self-start m-[30px] size-[21px]">
+        </div>
+        
+        <img src="../src/icons/Union.svg" alt="" class="absolute" width="80%">
+        <div class="absolute text-[50px] lg:text-[72px] font-semibold ml-[3vw] mt-[2vh]">Ваш надежный</div>
+        <div class="absolute text-[50px] lg:text-[72px] font-semibold ml-[15vw] mt-[17vh]">партнер в IT-разработке</div>
+        <div class="absolute text-[50px] lg:text-[72px] font-semibold ml-[47vw] mt-[32vh] lg:mt-[33vh]">и инновациях</div>
+        
+        <div class="absolute backdrop-blur-[7px] bg-blurButton w-[31%] h-[6em] lg:h-[8em] rounded-[37px] flex justify-between pl-8 items-center mt-[17.5%] ml-[16%]">
+          <div class="font-glr text-[22px] lg:text-[28px] text-white">Создаем решения,</br> которые меняют бизнес</div>
+          <img src="../src/icons/ellipse.svg" alt="" class="mr-[2vw] size-[45px] lg:size-[60px]" >
+        </div>
       </div>
 
+      <div class="absolute ml-[45vw] mt-[47vh] lg:mt-[50vh] bg-button rounded-[46px] flex justify-center items-center w-[20vw]">
+        <div class="text-white">Узнать больше</div>
+        <img src="../src/icons/arrow.svg" class="self-start ml-[1vw] h-[3vw] size-[21px]">
+      </div>
     </div>
   </header>
+
+  <section class="relative mt-56">
+    <div class="absolute text-[50px] lg:text-[72px] font-semibold">FALX Маркетинг/ Martech</div>
+    <img src="../src/images/Mask BG section1.png" class="w-full " alt="">
+    <!-- <div class="bg-[url('images/Mask BG section1.png')] bg-slate-300 bg-center bg-cover  h-[75vh] w-full rounded-[78px] pt-[7%]"> -->
+
+    </div>
+  </section>
 
   
 </body>
