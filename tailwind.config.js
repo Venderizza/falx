@@ -24,6 +24,7 @@ module.exports = {
         button: '#1C1C1C',
         darkText: '#1E1E1E',
         blurPink: '#DC02C373',
+        opacity0: '#FFFFFF00',
         caseBlue: '#2039D2',
       }
 
