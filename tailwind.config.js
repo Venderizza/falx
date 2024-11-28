@@ -7,6 +7,12 @@ module.exports = {
 
       'md': '960px',
 
+      'my2': '1073px',
+      
+      'my': '1230px',
+
+      'my3': '1360px',
+
       'lg': '1500px',
     },
 
