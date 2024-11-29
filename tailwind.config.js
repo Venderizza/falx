@@ -3,7 +3,7 @@ module.exports = {
   content: ['*.html'],
   theme: {
     screens: {
-      'sm': '576px',
+      'sm': '910px',
 
       'md': '960px',
 
@@ -13,7 +13,7 @@ module.exports = {
 
       'my3': '1360px',
 
-      'lg': '1500px',
+      'lg': '1630px',
     },
 
     fontFamily: {
