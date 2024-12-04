@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,26 +12,16 @@
     <div class="flex justify-between items-center gap-x-9">
       <img src="src/icons/logo.svg" class="size-[50px]" alt="" width="69" height="66">
       <div class="hidden my:flex justify-between items-center gap-x-9">
-        <a href="">Наши сервисы</a>
-        <a href="">Решаем проблемы</a>
-        <a href="">Этапы сотрудничества</a>
-        <a href="">Статистика</a>
+        <a href="#adout">Кто мы?</a>
+        <a href="#whatWeDo">Что мы предлагаем?</a>
+        <a href="">Каково с нами работать?</a>
+        <a href="">Все в цифрах</a>
         <a href="">Узнать больше</a>
       </div>
     </div>
     <div class="hidden my:block text-base">+7 (000) 000-00-00</div>
 
-    <!-- <div id="menu" class="hidden flex-col justify-between items-center gap-x-9">
-      <img src="../src/icons/logo.svg" class="" alt="" width="69" height="66">
-      <div id="menu" class="hidden my:flex-col justify-between items-center gap-x-9">
-        <a href="">Наши сервисы</a>
-        <a href="">Решаем проблемы</a>
-        <a href="">Этапы сотрудничества</a>
-        <a href="">Статистика</a>
-        <a href="">Узнать больше</a>
-      </div>
-    </div>
-    <div class="hidden my:block text-base">+7 (000) 000-00-00</div> -->
+  
 
   </div>
 
@@ -40,7 +30,7 @@
 
     <div class="bg-[url('images/main.jfif')] bg-center bg-cover mt-3 h-[80vh] min-[550px]:h-auto pb-10 md:pb-0 md:h-[550px] lg:h-[760px] w-full rounded-[78px] pt-[10vh] md:pt-[7%]">
     
-      <div class="hidden md:block relative">
+      <div class="hidden min-[1080px]:block relative">
 
         <div class="backdrop-blur-[7px] bg-blurButton w-[32%] h-[27%] lg:h-[7.5em] rounded-[34px] flex justify-between px-8 py-4 items-center mb-[-7%] ml-[37%]">
           <div class="">
@@ -62,7 +52,7 @@
           <img src="src/icons/ellipse.svg" alt="" class="mr-[30px] size-[45px] lg:size-[60px]" >
         </div>
         
-        <div class="mt-[-20px] my2:mt-2 my3:mt-3 ml-[48%] w-[250px] h-auto bg-button rounded-[46px] self-end flex justify-center items-center py-3">
+        <div class="mt-[-20px] my2:mt-2 my3:mt-3 ml-[48%] w-[250px] my3:w-[20%] h-auto bg-button rounded-[46px] self-end flex justify-center items-center py-4">
           <div class="text-white">Узнать больше</div>
           <img src="src/icons/arrow.svg" class="ml-5 size-[21px]">
         </div>
@@ -70,7 +60,7 @@
 
 
 
-      <div class="md:hidden my-auto">
+      <div class="min-[1080px]:hidden my-auto">
 
         <div class="bg-white rounded-[30px] px-4 py-8">
           <div class="leading-[150%] font-semibold text-[28px] mb-[5%]">Ваш надежный</br> партнер в IT-разработке</br> и инновациях</div>
@@ -94,53 +84,100 @@
     </div>
   </header>
 
-  <section class="relative mt-56 mx-5 md:mx-20 flex my3:block">
+  <section class="mt-56 grid grid-cols-3 justify-between gap-x-10 w-full h-auto bg-button rounded-[70px] md:rounded-[110px] px-5 md:px-20 py-28">
+    <div class="bg-blurPink backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+      <div class="font-semibold text-6xl text-center text-white">20%</div>
+      <div class="text-xl text-white mt-5">Скидки на первый заказ до 20% - Владельцам Корпоративной Карты FALX</div>
+    </div>
+
+    <div class="bg-blurPink backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+      <div class="font-semibold text-6xl text-center text-white">1 час</div>
+      <div class="text-xl text-white mt-5">1 b2b консультация 1 час бесплатно - Оценим потребности вашего бизнеса
+      и предложим индивидуальные решения</div>
+    </div>
+
+    <div class="bg-blurPink backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+      <div class="font-semibold text-6xl text-center text-white">100%</div>
+      <div class="text-xl text-white mt-5">100% гарантия возврата средств, если мы не подойдем вашему бизнесу </div>
+    </div>
+  </section>
+
+  <div id="adout" class="spacer mt-[100px]"></div>
+
+  <section class="relative mt-56 mx-5 md:mx-20 block min-[670px]:flex my3:block">
 
     <div class="my3:absolute my3:w-[59%] lg:w-[57%]">
       <div class="leading-[110%] text-[40px] my3:text-[50px] lg:text-[70px] font-semibold">FALX Маркетинг/ Martech</div>
       <p class="text-[16px] lg:text-[18px] mt-[4%] lg:mt-[4%]">Все виды онлайн/оффлайн маркетинга + martech (маркетинговые технологии)</p>
-      <p class="text-[16px] lg:text-[18px] mt-[3%] lg:mt-[5%]">Маркетинговые технологии играют ключевую роль в современном 
-        бизнесе, позволяя компаниям эффективно взаимодействовать с клиентами и оптимизировать свои стратегии. 
-        Маркетинговые технологии продолжают развиваться, предоставляя компаниям новые возможности для 
-        роста и улучшения взаимодействия с клиентами.</p>
       
-      <div class="my3:flex justify-between items-center mt-[10%] my3:mt-[6%] lg:mt-[6%]"> 
+      <div class="mt-[7%] flex flex-col gap-y-5 w-[93%]">
 
-        <div class="backdrop-blur-[7px] bg-blurButton w-[90%] my3:w-[55%] rounded-[37px] flex justify-between py-4 px-8 items-center">
-          <div class="font-glr text-[22px] lg:text-[30px] text-white">Скачать полезные</br>материалы</div>
-          <img src="src/icons/arrow.svg" class="self-start h-[3vw] size-[21px]">
+        <div class="bg-blurButton backdrop-blur-[7px] text-white py-4 px-7 rounded-[34px]">
+          <div class="text-[20px] my4:text-[25px] mb-1">
+            Инновационные технологии:
+          </div>
+          <div class="text-[14px] my4:text-[18px]">
+            Используйте новейшие технологии для оптимизации бизнеса. Мы обещаем, 
+            что ваши конкуренты не поймут, как вы это сделали (и будут завидовать!).
+          </div>
         </div>
 
-        <div class="mt-8 my3:mt-0 w-[220px] h-auto bg-button rounded-[46px] flex justify-center items-center py-4">
-          <div class="text-white">Узнать больше</div>
-          <img src="src/icons/arrow.svg" class="ml-5 size-[21px]">
+        <div class="bg-blurButton backdrop-blur-[7px] text-white py-4 px-7 rounded-[34px]">
+          <div class="text-[20px] my4:text-[25px] mb-1">
+            Скорость и эффективность:
+          </div>
+          <div class="text-[14px] my4:text-[18px]">
+            С нашими инструментами вы сможете работать быстрее, чем ваш бухгалтер 
+            успевает напечатать счет на оплату или подписать очередной акт!.
+          </div>
+        </div>
+
+        <div class="bg-blurButton backdrop-blur-[7px] text-white py-4 px-7 rounded-[34px]">
+          <div class="text-[20px] my4:text-[25px] mb-1">
+            Бесплатная консультация:
+          </div>
+          <div class="text-[14px] my4:text-[18px]">
+            Запишитесь на бесплатную консультацию, чтобы узнать, как мы можем помочь
+             вашему бизнесу расти... или хотя бы не загнуться!.
+          </div>
         </div>
 
       </div>
+
     </div>
     
-    <div class="bg-[url('images/MaskBGsection12.png')] w-[170%] h-auto ml-11 block my3:hidden rounded-[37px]"></div>
-    <img src="src/images/Mask BG section1.png" class="w-full hidden my3:block" alt="">
+    <div class="bg-[url('images/MaskBGsection12.png')] w-[170%] h-auto ml-11 bg-cover bg-no-repeat block my3:hidden rounded-[37px]">
+    </div>
+    <div class="bg-[url('images/MaskBGsc02.png')] bg-contain bg-no-repeat min-h-[800px] hidden my3:block">
+    </div>
+    <!-- <img src="src/images/Mask BG section1.png" class=" hidden my3:block" alt=""> -->
 
-  
   </section>
+
+
+
+
+  <div id="whatWeDo" class="spacer mt-[150px]"></div>
+
+
+
 
   <section class="mt-56">
 
-    <div class="w-full h-auto bg-button rounded-[70px] md:rounded-[110px] px-5 md:px-20 pb-32 pt-[5%] relative ">
-      <div>
-        <div class="absolute">
-          <div class="text-white text-[40px] md:text-[30px] my:text-[50px] lg:text-[60px] font-semibold mb-[10px]">Что мы делаем</div>
-          <div class="hidden md:block text-white text-[18px] my:text-[24px] lg:text-[30px]">Основные направления деятельности</div>
-          <div class="hidden md:block text-white text-[18px] my:text-[24px] lg:text-[30px] font-semibold">FALX</div>
+    <div class="w-full h-auto bg-button rounded-[70px] md:rounded-[110px] px-5 md:px-20 pb-32 max-[425px]:pt-[30px] pt-[50px] relative ">
+      <div class="max-[425px]:mb-[50px] flex sm:block max-[690px]:block">
+        <div class="sm:block max-[690px]:absolute ml-[5%] sm:absolute sm:ml-0">
+          <div class="text-white leading-[110%] text-[25px] min-[445px]:text-[30px] min-[590px]:text-[35px] md:text-[30px] min-[1350px]:text-[50px] lg:text-[60px] font-semibold mb-[15%]">Что мы делаем</div>
+          <div class="hidden sm:block text-white text-[18px] min-[1350px]:text-[24px] lg:text-[30px] font-semibold">Решиться - значит сделать!</div>
         </div>
-        <img src="src/images/bannerWWD.png" class="sm:hidden w-full" alt="">
+        <img src="src/images/bannerWWD.png" class="max-[350px]:hidden min-[691px]:hidden w-full" alt="">
+        <div class="bg-[url('images/whatwedo/bannerWWD.png')] sm:hidden max-[690px]:hidden bg-center bg-cover h-auto w-full rounded-[30px]"></div>
         <img src="src/images/whatwedo/MaskBunner.svg" class="hidden sm:block w-full">
       </div>
 
-      <div class="grid grid-cols-2 min-[1140px]:grid-cols-3 min-[1460px]:grid-cols-4 gap-0 gap-y-24 mt-[5%]">
+      <div class="hidden min-[750px]:grid md:w-[100%] mx-auto grid-cols-2 min-[1140px]:grid-cols-3 place-items-center min-[1460px]:grid-cols-4 gap-0 gap-y-24 mt-[5%]">
 
-        <div class="relative flex flex-col items-center size-[80%]">
+        <div class="relative flex flex-col self-start items-center size-[80%]">
           <img class="" src="src/images/whatwedo/info.png" alt="">
           <div class="absolute w-[85%] mt-[5%]">
             <div class="font-glr text-[24px] lg:text-[26px] text-white font-semibold text-center leading-[120%]">IT-Разработка</div>
@@ -152,7 +189,7 @@
           </div>
         </div>
 
-        <div class="relative flex flex-col items-center size-[80%]">
+        <div class="relative flex flex-col self-start items-center size-[80%]">
           <img class="" src="src/images/whatwedo/info.png" alt="">
           <div class="absolute w-[85%] mt-[5%]">
             <div class="font-glr text-[24px] lg:text-[26px] text-white font-semibold text-center leading-[120%]">Лидогенерация</div>
@@ -164,7 +201,7 @@
           </div>
         </div>
 
-        <div class="relative flex flex-col items-center size-[80%]">
+        <div class="relative flex flex-col self-start items-center size-[80%]">
           <img class="" src="src/images/whatwedo/info.png" alt="">
           <div class="absolute w-[85%] mt-[5%]">
             <div class="font-glr text-[24px] lg:text-[26px] text-white font-semibold text-center leading-[120%]">Техническая </br> Поддержка</div>
@@ -238,31 +275,94 @@
       
       </div>
 
+      <div class="grid min-[750px]:hidden w-[100%] mx-auto grid-cols-2 min-[640px]:grid-cols-3 place-items-center gap-4 gap-y-14 mt-[7%]">
+
+        <div class="relative bg-[url('images/whatwedo/info-mobile.png')] h-[250px] w-[160px] min-[425px]:h-[270px] min-[425px]:w-[190px] px-3 py-5 bg-contain bg-no-repeat flex flex-col items-center">
+          <div class="">
+            <div class="font-glr text-[18px] min-[425px]:text-[18px] text-white font-semibold text-center leading-[120%]">IT-Разработка</div>
+            <div class="font-glr text-[12px] min-[425px]:text-[13px] lg:text-[16px] text-white font-light mt-[8%]">Описание: Улучшение видимости сайта в поисковых системах через оптимизацию контента и технические аспекты</div>
+          </div>
+          <div class="absolute h-[45px] top-[83%] min-[425px]:top-[90%] bg-slate-600 rounded-[13px] flex justify-center items-center w-[65%]">
+            <div class="text-white">Узнать</div>
+            <img src="src/icons/arrow.svg" class="ml-[1vw] h-[3vw] size-[21px]">
+          </div>
+        </div>
+
+        <div class="relative bg-[url('images/whatwedo/info-mobile.png')] h-[250px] w-[160px] min-[425px]:h-[270px] min-[425px]:w-[190px] px-3 py-5 bg-contain bg-no-repeat flex flex-col items-center">
+          <div class="">
+            <div class="font-glr text-[18px] min-[425px]:text-[18px] text-white font-semibold text-center leading-[120%]">IT-Разработка</div>
+            <div class="font-glr text-[12px] min-[425px]:text-[13px] lg:text-[16px] text-white font-light mt-[8%]">Описание: Улучшение видимости сайта в поисковых системах через оптимизацию контента и технические аспекты</div>
+          </div>
+          <div class="absolute h-[45px] top-[83%] min-[425px]:top-[90%] bg-slate-600 rounded-[13px] flex justify-center items-center w-[65%]">
+            <div class="text-white">Узнать</div>
+            <img src="src/icons/arrow.svg" class="ml-[1vw] h-[3vw] size-[21px]">
+          </div>
+        </div>
+
+        <div class="relative bg-[url('images/whatwedo/info-mobile.png')] h-[250px] w-[160px] min-[425px]:h-[270px] min-[425px]:w-[190px] px-3 py-5 bg-contain bg-no-repeat flex flex-col items-center">
+          <div class="">
+            <div class="font-glr text-[18px] min-[425px]:text-[18px] text-white font-semibold text-center leading-[120%]">IT-Разработка</div>
+            <div class="font-glr text-[12px] min-[425px]:text-[13px] lg:text-[16px] text-white font-light mt-[8%]">Описание: Улучшение видимости сайта в поисковых системах через оптимизацию контента и технические аспекты</div>
+          </div>
+          <div class="absolute h-[45px] top-[83%] min-[425px]:top-[90%] bg-slate-600 rounded-[13px] flex justify-center items-center w-[65%]">
+            <div class="text-white">Узнать</div>
+            <img src="src/icons/arrow.svg" class="ml-[1vw] h-[3vw] size-[21px]">
+          </div>
+        </div>
+
+        <div class="relative bg-[url('images/whatwedo/info-mobile.png')] h-[250px] w-[160px] min-[425px]:h-[270px] min-[425px]:w-[190px] px-3 py-5 bg-contain bg-no-repeat flex flex-col items-center">
+          <div class="">
+            <div class="font-glr text-[18px] min-[425px]:text-[18px] text-white font-semibold text-center leading-[120%]">IT-Разработка</div>
+            <div class="font-glr text-[12px] min-[425px]:text-[13px] lg:text-[16px] text-white font-light mt-[8%]">Описание: Улучшение видимости сайта в поисковых системах через оптимизацию контента и технические аспекты</div>
+          </div>
+          <div class="absolute h-[45px] top-[83%] min-[425px]:top-[90%] bg-slate-600 rounded-[13px] flex justify-center items-center w-[65%]">
+            <div class="text-white">Узнать</div>
+            <img src="src/icons/arrow.svg" class="ml-[1vw] h-[3vw] size-[21px]">
+          </div>
+        </div>
+
+        <div class="relative bg-[url('images/whatwedo/info-mobile.png')] h-[250px] w-[160px] min-[425px]:h-[270px] min-[425px]:w-[190px] px-3 py-5 bg-contain bg-no-repeat flex flex-col items-center">
+          <div class="">
+            <div class="font-glr text-[18px] min-[425px]:text-[18px] text-white font-semibold text-center leading-[120%]">IT-Разработка</div>
+            <div class="font-glr text-[12px] min-[425px]:text-[13px] lg:text-[16px] text-white font-light mt-[8%]">Описание: Улучшение видимости сайта в поисковых системах через оптимизацию контента и технические аспекты</div>
+          </div>
+          <div class="absolute h-[45px] top-[83%] min-[425px]:top-[90%] bg-slate-600 rounded-[13px] flex justify-center items-center w-[65%]">
+            <div class="text-white">Узнать</div>
+            <img src="src/icons/arrow.svg" class="ml-[1vw] h-[3vw] size-[21px]">
+          </div>
+        </div>
+
+
+
+      </div>
+
     </div>
   </section>
   
   <section class="mt-56 mx-5 md:mx-20">
-    <div class="relative">
-      <div class="absolute leading-[110%] text-[25px] my2:text-[35px] my3:text-[45px] lg:text-[50px] font-semibold w-[55%]">Эффективные 
-        маркетинговые стратегии для бизнеса</div>
-      
-      <div class="absolute flex flex-col ml-[5%] mt-[10%]">
-
-        <div class="mt-[5%] backdrop-blur-[7px] bg-blurButton w-full rounded-[31px]
-        py-4 pl-8 pr-14 font-glr text-[22px] lg:text-[28px] text-white">Исследуем, тестируем, запускаем </br> 
-           PR, реклама и стратегии продвижения </br> для вашего бизнеса
-        </div>
-
-
-        <div class="mt-5 w-[220px] h-auto bg-button rounded-[46px] self-end flex justify-center items-center py-4">
-          <div class="text-white">Узнать больше</div>
-          <img src="src/icons/arrow.svg" class="ml-5 size-[21px]">
-        </div>
-
+    <div class="relative mx-20">
+      <div class="ml-[-5rem] absolute leading-[110%] text-[25px] my2:text-[35px] my3:text-[45px] lg:text-[50px] font-semibold w-[55%]">Эффективные 
+        маркетинговые стратегии для бизнеса
       </div>
 
-      <img src="src/images/marketing bG.png"  class="w-full "alt="">
+      <div class="absolute flex gap-x-10 mt-[7%] w-full">
+
+        <div class="mt-[5%] backdrop-blur-[7px] bg-blurButton w-full rounded-[31px] py-6 px-8 font-glr text-[18px] lg:text-[24px] text-white">
+          <div class="flex items-center"> Получите <span class="leading-[100%] mx-2 text-[50px] lg:text-[70px] font-black">20%</span> скидку на первый заказ </div>
+          или воспользуйтесь гибкой рассрочкой! И это не маркетинговая ловушка. Мы просто хотим упростить вам финплан.
+        </div>
+
+        <div class="flex flex-col justify-center mt-[5%] backdrop-blur-[7px] bg-blurButton w-full rounded-[31px] py-6 px-8 font-glr text-[18px] lg:text-[24px] text-white">
+          <div class="flex items-center"> Попробуйте сотрудничество с нами в течение <span class="leading-[100%] mx-2 text-[50px] lg:text-[70px] font-black">7</span>дней</div>
+          Если не понравится — Мы закроем компанию.
+        </div>
+
+
+
+      </div>
     </div>
+
+    <img src="src/images/marketing bG.png"  class="w-full "alt="">
     
 
 
@@ -270,8 +370,9 @@
 
   <section class="mt-56 mx-5 md:mx-20">
     <div class="relative">
-      <div class="absolute top-[-20px] right-0 h-[120%] flex flex-col justify-between items-end text-[40px] my:text-[50px] lg:text-[72px] font-semibold">
-        Кейсы
+      <div class="absolute right-0 w-full flex justify-between text-[40px] my:text-[50px] lg:text-[72px] font-semibold">
+        <div class="text-[14px] my:text-[20px] lg:text-[24px] font-light w-[40%]">Посмотрите, как наши решения помогли другим предпринимателям. Выглядит просто - но сколько здесь опыта и знаний. </div>
+        <div>Кейсы</div>
       </div>
 
       <div class="absolute top-[45%] grid grid-cols-2 gap-4 w-[58%]">
@@ -286,8 +387,8 @@
     </div>
 
     <div class="flex flex-col items-end mt-[4%]">
-      <div class="font-glr text-[16px] my:text-[20px] lg:text-[28px] text-button w-[35%] text-right">В современном мире информационных технологий
-        компании все чаще обращаются к IT-партнерам для реализации своих амбициозных проектов.
+      <div class="font-glr text-[16px] my:text-[20px] lg:text-[28px] text-button w-[35%] text-right">
+        Присоединяйтесь к нашей партнерской программе и зарабатывайте вместе с нами! Разовьем российский бизнес вместе.
       </div>
 
       <div class="mt-10 w-[220px] h-auto bg-button rounded-[46px] flex justify-center items-center py-4">

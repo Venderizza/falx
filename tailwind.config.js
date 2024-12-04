@@ -13,6 +13,8 @@ module.exports = {
 
       'my3': '1360px',
 
+      'my4' : '1560px',
+
       'lg': '1630px',
     },
 
