@@ -5,29 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="src/output.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+
 </head>
 <body class="">
 
-  <div class="z-40 px-5 py-[1%] md:px-20 w-full h-auto sticky top-0 bg-white text-sm flex justify-between items-center font-semibold my-5 bg-slate-400s text-darkText font-glr">
+  <menu class="z-40 px-5 py-[1%] md:px-20 w-full h-auto sticky top-0 bg-white text-sm flex justify-between items-center font-semibold my-5 bg-slate-400s text-darkText font-glr">
     <div class="flex justify-between items-center gap-x-9">
       <img src="src/icons/logo.svg" class="size-[50px]" alt="" width="69" height="66">
       <div class="hidden my:flex justify-between items-center gap-x-9">
-        <a href="#adout">Кто мы?</a>
-        <a href="#whatWeDo">Что мы предлагаем?</a>
-        <a href="">Каково с нами работать?</a>
-        <a href="">Все в цифрах</a>
-        <a href="">Узнать больше</a>
+        <a href="#about">Кто мы?</a>
+        <a href="#what_offer">Что мы предлагаем?</a>
+        <a href="#what_do">Каково с нами работать?</a>
+        <a href="#in_digits">Все в цифрах</a>
+        <a href="#more">Узнать больше</a>
       </div>
     </div>
     <div class="hidden my:block text-base">+7 (000) 000-00-00</div>
+  </menu>
 
-  
+ 
 
-  </div>
+
+
 
   <header class="mx-5 md:mx-20">
-    
-
+    <div id="about" class="absolute top-0"></div>
     <div class="bg-[url('images/main.jfif')] bg-center bg-cover mt-3 h-[80vh] min-[550px]:h-auto pb-10 md:pb-0 md:h-[550px] lg:h-[760px] w-full rounded-[78px] pt-[10vh] md:pt-[7%]">
     
       <div class="hidden min-[1080px]:block relative">
@@ -52,7 +57,7 @@
           <img src="src/icons/ellipse.svg" alt="" class="mr-[30px] size-[45px] lg:size-[60px]" >
         </div>
         
-        <div class="mt-[-20px] my2:mt-2 my3:mt-3 ml-[48%] w-[250px] my3:w-[20%] h-auto bg-button rounded-[46px] self-end flex justify-center items-center py-4">
+        <div class="mt-[-20px] my2:mt-2 my3:mt-6 ml-[48%] w-[250px] my3:w-[20%] h-auto bg-button rounded-[46px] self-end flex justify-center items-center py-4">
           <div class="text-white">Узнать больше</div>
           <img src="src/icons/arrow.svg" class="ml-5 size-[21px]">
         </div>
@@ -84,59 +89,87 @@
     </div>
   </header>
 
-  <section class="mt-56 grid grid-cols-3 justify-between gap-x-10 w-full h-auto bg-button rounded-[70px] md:rounded-[110px] px-5 md:px-20 py-28">
-    <div class="bg-blurPink backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
-      <div class="font-semibold text-6xl text-center text-white">20%</div>
-      <div class="text-xl text-white mt-5">Скидки на первый заказ до 20% - Владельцам Корпоративной Карты FALX</div>
-    </div>
 
-    <div class="bg-blurPink backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
-      <div class="font-semibold text-6xl text-center text-white">1 час</div>
-      <div class="text-xl text-white mt-5">1 b2b консультация 1 час бесплатно - Оценим потребности вашего бизнеса
-      и предложим индивидуальные решения</div>
-    </div>
 
-    <div class="bg-blurPink backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
-      <div class="font-semibold text-6xl text-center text-white">100%</div>
-      <div class="text-xl text-white mt-5">100% гарантия возврата средств, если мы не подойдем вашему бизнесу </div>
+
+
+
+
+  <section class="relative mt-56 w-full h-auto bg-button rounded-[70px] md:rounded-[110px] px-5 md:px-20 py-28">
+    <div id="in_digits" class="spacer absolute top-[-250px]"></div>
+
+    
+    <div class="flex justify-between gap-x-10 overflow-x-auto">
+
+      <div class="bg-blurPink min-w-[450px] backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+        <div class="font-semibold text-6xl text-center text-white">20%</div>
+        <div class="text-xl text-white mt-5">Скидки на первый заказ до 20% - Владельцам Корпоративной Карты FALX</div>
+      </div>
+  
+      <div class="bg-blurPink min-w-[450px] backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+        <div class="font-semibold text-6xl text-center text-white">1 час</div>
+        <div class="text-xl text-white mt-5">1 b2b консультация 1 час бесплатно - Оценим потребности вашего бизнеса
+        и предложим индивидуальные решения</div>
+      </div>
+  
+      <div class="bg-blurPink min-w-[450px] backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+        <div class="font-semibold text-6xl text-center text-white">100%</div>
+        <div class="text-xl text-white mt-5">100% гарантия возврата средств, если мы не подойдем вашему бизнесу </div>
+      </div>
+
+      <div class="bg-blurPink min-w-[450px] backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+        <div class="font-semibold text-6xl text-center text-white">100%</div>
+        <div class="text-xl text-white mt-5">100% гарантия возврата средств, если мы не подойдем вашему бизнесу </div>
+      </div>
+
+      <div class="bg-blurPink min-w-[450px] backdrop-blur-[7px] rounded-[40px] px-7 pt-5 pb-7">
+        <div class="font-semibold text-6xl text-center text-white">100%</div>
+        <div class="text-xl text-white mt-5">100% гарантия возврата средств, если мы не подойдем вашему бизнесу </div>
+      </div>
+
     </div>
   </section>
 
-  <div id="adout" class="spacer mt-[100px]"></div>
+
+
+
+
 
   <section class="relative mt-56 mx-5 md:mx-20 block min-[670px]:flex my3:block">
 
-    <div class="my3:absolute my3:w-[59%] lg:w-[57%]">
-      <div class="leading-[110%] text-[40px] my3:text-[50px] lg:text-[70px] font-semibold">FALX Маркетинг/ Martech</div>
-      <p class="text-[16px] lg:text-[18px] mt-[4%] lg:mt-[4%]">Все виды онлайн/оффлайн маркетинга + martech (маркетинговые технологии)</p>
+    <div id="what_offer" class="spacer absolute top-[-100px]"></div>
+
+    <div class="my3:absolute my3:w-[1000px]">
+      <div class="leading-[110%] text-[40px] my3:text-[65px] font-semibold">FALX Маркетинг/ Martech</div>
+      <p class="text-[18px] mt-[4%] lg:mt-[4%]">Все виды онлайн/оффлайн маркетинга + martech (маркетинговые технологии)</p>
       
       <div class="mt-[7%] flex flex-col gap-y-5 w-[93%]">
 
         <div class="bg-blurButton backdrop-blur-[7px] text-white py-4 px-7 rounded-[34px]">
-          <div class="text-[20px] my4:text-[25px] mb-1">
+          <div class="text-[25px] mb-1">
             Инновационные технологии:
           </div>
-          <div class="text-[14px] my4:text-[18px]">
+          <div class="text-[18px]">
             Используйте новейшие технологии для оптимизации бизнеса. Мы обещаем, 
             что ваши конкуренты не поймут, как вы это сделали (и будут завидовать!).
           </div>
         </div>
 
         <div class="bg-blurButton backdrop-blur-[7px] text-white py-4 px-7 rounded-[34px]">
-          <div class="text-[20px] my4:text-[25px] mb-1">
+          <div class="text-[25px] mb-1">
             Скорость и эффективность:
           </div>
-          <div class="text-[14px] my4:text-[18px]">
+          <div class="text-[18px]">
             С нашими инструментами вы сможете работать быстрее, чем ваш бухгалтер 
             успевает напечатать счет на оплату или подписать очередной акт!.
           </div>
         </div>
 
         <div class="bg-blurButton backdrop-blur-[7px] text-white py-4 px-7 rounded-[34px]">
-          <div class="text-[20px] my4:text-[25px] mb-1">
+          <div class="text-[25px] mb-1">
             Бесплатная консультация:
           </div>
-          <div class="text-[14px] my4:text-[18px]">
+          <div class="text-[18px]">
             Запишитесь на бесплатную консультацию, чтобы узнать, как мы можем помочь
              вашему бизнесу расти... или хотя бы не загнуться!.
           </div>
@@ -148,7 +181,7 @@
     
     <div class="bg-[url('images/MaskBGsection12.png')] w-[170%] h-auto ml-11 bg-cover bg-no-repeat block my3:hidden rounded-[37px]">
     </div>
-    <div class="bg-[url('images/MaskBGsc02.png')] bg-contain bg-no-repeat min-h-[800px] hidden my3:block">
+    <div class="bg-[url('images/MaskBGsc02.png')] rounded-[80px] bg-clip-content bg-no-repeat min-w-full min-h-[800px] hidden my3:block">
     </div>
     <!-- <img src="src/images/Mask BG section1.png" class=" hidden my3:block" alt=""> -->
 
@@ -157,12 +190,10 @@
 
 
 
-  <div id="whatWeDo" class="spacer mt-[150px]"></div>
 
+  <section class="mt-56 relative">
 
-
-
-  <section class="mt-56">
+    <div id="what_do" class="spacer absolute top-[-100px]"></div>
 
     <div class="w-full h-auto bg-button rounded-[70px] md:rounded-[110px] px-5 md:px-20 pb-32 max-[425px]:pt-[30px] pt-[50px] relative ">
       <div class="max-[425px]:mb-[50px] flex sm:block max-[690px]:block">
@@ -332,34 +363,36 @@
           </div>
         </div>
 
-
-
       </div>
 
     </div>
   </section>
+
+
+
+
+
   
   <section class="mt-56 mx-5 md:mx-20">
     <div class="relative mx-20">
-      <div class="ml-[-5rem] absolute leading-[110%] text-[25px] my2:text-[35px] my3:text-[45px] lg:text-[50px] font-semibold w-[55%]">Эффективные 
-        маркетинговые стратегии для бизнеса
+      <div class="ml-[-5rem] absolute leading-[110%] text-[25px] my2:text-[35px] my3:text-[45px] lg:text-[50px] font-semibold w-[68%]">Эффективные 
+        маркетинговые </br> стратегии для бизнеса
       </div>
 
-      <div class="absolute flex gap-x-10 mt-[7%] w-full">
+      <div class="absolute flex min-[1185px]:flex-row gap-x-10 gap-y-4 mt-[12%] w-full">
 
-        <div class="mt-[5%] backdrop-blur-[7px] bg-blurButton w-full rounded-[31px] py-6 px-8 font-glr text-[18px] lg:text-[24px] text-white">
-          <div class="flex items-center"> Получите <span class="leading-[100%] mx-2 text-[50px] lg:text-[70px] font-black">20%</span> скидку на первый заказ </div>
+        <div class="backdrop-blur-[7px] bg-blurButton w-[80%] rounded-[31px] py-6 px-8 font-glr text-[14px] min-[1186px]:text-[18px] lg:text-[24px] text-white">
+          <div class="flex items-center"> Получите <span class="leading-[100%] mx-2 text-[30px] min-[1186px]:text-[50px] lg:text-[70px] font-black">20%</span> скидку на первый заказ </div>
           или воспользуйтесь гибкой рассрочкой! И это не маркетинговая ловушка. Мы просто хотим упростить вам финплан.
         </div>
 
-        <div class="flex flex-col justify-center mt-[5%] backdrop-blur-[7px] bg-blurButton w-full rounded-[31px] py-6 px-8 font-glr text-[18px] lg:text-[24px] text-white">
-          <div class="flex items-center"> Попробуйте сотрудничество с нами в течение <span class="leading-[100%] mx-2 text-[50px] lg:text-[70px] font-black">7</span>дней</div>
+        <div class="flex flex-col justify-center backdrop-blur-[7px] bg-blurButton w-[80%] rounded-[31px] py-6 px-8 font-glr text-[14px] min-[1186px]:text-[18px] lg:text-[24px] text-white">
+          <div class="flex items-center"> Попробуйте сотрудничество с нами в течение <span class="leading-[100%] mx-2 text-[30px] min-[1186px]:text-[50px] lg:text-[70px] font-black">7</span>дней</div>
           Если не понравится — Мы закроем компанию.
         </div>
 
-
-
       </div>
+
     </div>
 
     <img src="src/images/marketing bG.png"  class="w-full "alt="">
@@ -399,13 +432,18 @@
 
   </section>
 
-  <section class="mt-56">
-    <div class="relative w-full h-auto bg-button rounded-t-[110px] px-5 md:px-20 pt-28 pb-20">
 
-      <div class="bg-[url('images/banner.jfif')] pt-[10%] bg-center bg-cover h-auto w-full rounded-t-[110px]">
 
-        <div class="mt-[-15%] text-white backdrop-blur-[8px] bg-blurPink rounded-[58px] 
-        w-[60%] my:w-[47%] lg:w-[40%] h-auto ml-[5%] px-16 py-10">
+
+
+  <section class="relative mt-72">
+    <div id="more" class="spacer absolute top-[-100px]"></div>
+
+    <div class="relative w-full h-auto bg-button rounded-t-[70px] md:rounded-t-[110px] px-5 md:px-20 pt-8 sm:pt-28 pb-20 sm:pb-36">
+
+      <div class="bg-[url('images/banner.jfif')] pb-28 sm:py-[10%] bg-center bg-cover h-auto w-full rounded-t-[110px]">
+
+        <div class="sm:my-[-13%] text-white backdrop-blur-[8px] bg-blurPink rounded-[70px] w-full sm:w-[60%] my:w-[47%] lg:w-[40%] h-auto mx-0 sm:ml-[5%] px-8 smm:px-16 py-10">
   
           <div class="leading-[110%] text-[35px] lg:text-[50px] font-semibold">Расскажите о вашей задаче</div>
   
@@ -426,7 +464,7 @@
              </form>
   
              <form action="">
-              <p><textarea class="overflow-auto focus:outline-none pl-1 mt-8 w-full h-[100px] focus:border-b-white bg-opacity0 border-b-[1px]
+              <p><textarea class="overflow-hidden focus:outline-none pl-1 mt-8 w-full h-[100px] focus:border-b-white bg-opacity0 border-b-[1px]
                  border-b-[#969696] text-[#CECECE] text-[20px] placeholder-[#CECECE] pb-11 resize-none" placeholder="Опишите кратко свой запрос"></textarea>
               </p>
              </form>

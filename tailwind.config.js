@@ -3,6 +3,10 @@ module.exports = {
   content: ['*.html'],
   theme: {
     screens: {
+      'ssm': '425px',
+
+      'smm': '475px',
+
       'sm': '910px',
 
       'md': '960px',
@@ -11,7 +15,7 @@ module.exports = {
       
       'my': '1230px',
 
-      'my3': '1360px',
+      'my3': '1363px',
 
       'my4' : '1560px',
 
